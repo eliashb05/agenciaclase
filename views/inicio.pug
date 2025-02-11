@@ -1,0 +1,98 @@
+extends ./layout/index
+
+block slider
+    .slider
+        .h1 Río de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6.d-flex.flex-column.justify-content-start
+                p Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id. Mauris ultricies augue lectus, efficitur tincidunt enim euismod non.
+
+                p Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim,
+
+            .col-md-6.d-flex.align-items-center.justify-content-center
+                img(src="/img/inicio_nosotros.jpg" alt="imagen nosotros" class="img-fluid")
+        .row.proximos-viajes
+            each viaje in viajes
+                .col-md-6.col-lg-4.mb-4
+                    .card
+                        img(src=`/img/destinos_${viaje.imagen}_ln.jpg`, alt="imagen viaje", class="img-fluid")
+                        .card-body
+                            h2=viaje.titulo
+                            p
+                            svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' width='24' height='24' stroke-width='2')
+                                path(d='M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z')
+                                path(d='M16 3v4')
+                                path(d='M8 3v4')
+                                path(d='M4 11h16')
+                                path(d='M7 14h.013')
+                                path(d='M10.01 14h.005')
+                                path(d='M13.01 14h.005')
+                                path(d='M16.015 14h.005')
+                                path(d='M13.015 17h.005')
+                                path(d='M7.01 17h.005')
+                                path(d='M10.01 17h.005')
+                                // Aquí usamos `moment` para formatear la fecha
+                            | #{moment(viaje.fecha_ida).format('DD/MM/YYYY')} - #{moment(viaje.fecha_vuelta).format('DD/MM/YYYY')}
+                            p
+                            svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' fill='none' stroke='red' stroke-linecap='round' stroke-linejoin='round' width='24' height='24' stroke-width='2')
+                                path(d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0')
+                                path(d='M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0')
+                                path(d='M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855')
+                            |  #{viaje.disponibles} Disponibles
+
+                            p=viaje.descripcion.substring(0, 100) + '...'
+                            a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Mas informacion
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h1 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Marzo 2024 - 01 de Octubre 2024
+                        p.precio 3500 euros
+
+    .container
+
+    main.container.mt-5
+        h1.text-center-mt-5.text-center #{titulo}
+            blockquote.text-center.mb-5
+                p
+                    | Lee sobre nuestros clientes y sus experiencias
+        .row.testimonios
+            each testimonio in testimonios
+                .col-md-6.col-lg-4.mb-4
+                    .card.shadow-lg.border-light
+                        .card-body
+                            blockquote.blockquote
+                                p.mb-0.text-center
+                                    | "#{testimonio.mensaje}"
+                            footer.blockquote-footer.text-right
+                                | - #{testimonio.nombre}
+        .row
+        .row
+            .col-md-12
+                h2.d-block.w-100.text-center Agrega un Comentario
+
+                if(errores)
+                    each error in errores
+                        .alert.col.alert-danger.text-center=error
+
+            .row.justify-content-center.col
+                .col-md-8
+                    form(action="/testimonios" method="POST")
+                        .form-group
+                            label(for="nombre") Nombre
+                            input#nombre(type="text", placeholder="Tu Nombre", name="nombre", class="form-control", value=nombre)
+                        .form-group
+                            label(for="correoelectronico") Correo Electrónico
+                            input#correoelectronico(type="email", placeholder="Correo Electrónico", name="correoelectronico", class="form-control", value=correoelectronico)
+                        .form-group
+                            label(for="mensaje") Mensaje
+                            textarea#mensaje(placeholder="Mensaje", name="mensaje", class="form-control", rows="5")= mensaje
+                        input.btn.btn-success.btn-block(type="submit", value="Enviar Testimonio")

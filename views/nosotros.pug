@@ -1,0 +1,29 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="/img/nosotros.jpg", alt="", class="img-fluid")
+            .col-md-7.text-justify
+                h1 #{titulo}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et bibendum erat. Donec odio nisl, bibendum eu eros eget, vulputate faucibus lectus. Nulla condimentum est odio, lobortis molestie eros aliquet vitae. Nulla varius elit nec risus commodo, at tempor felis condimentum. Cras vitae leo sodales mauris interdum vulputate eu non justo.
+                p Proin eget leo elit. Nullam urna velit, iaculis sit amet tellus non, pretium placerat leo. Suspendisse quis dui a libero aliquet luctus ut a diam. Sed in elit id quam vestibulum aliquam. Nunc viverra enim nunc, nec mollis diam semper in. Vivamus condimentum ligula sapien, et facilisis tellus tempus ac. Morbi iaculis nulla id molestie congue. Nunc eget eleifend est. Nullam vitae arcu ultricies velit facilisis elementum ac sit amet ex.
+                p Morbi odio ligula, viverra id ornare non, posuere non ipsum. In congue erat sit amet iaculis suscipit. Ut eleifend lectus sed laoreet lacinia. Sed finibus tellus quis velit ullamcorper posuere. In tristique est a massa dictum, et accumsan ipsum malesuada. Nullam vitae magna nec ligula egestas euismod ac vitae velit. Quisque fringilla felis vel massa dignissim, vitae rutrum tellus dictum. Pellentesque diam nisl, efficitur non diam sed, gravida blandit tortor. Suspendisse sollicitudin, velit sit amet viverra interdum, diam felis luctus sem, nec bibendum dui elit et urna.
+                p Donec vehicula lacus velit, quis dignissim mauris laoreet tempus. Suspendisse ut condimentum ex.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="/img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.md-4 Seguridad
+                    p Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoria
+                .col-md-4
+                    img(src="/img/icono_destinos.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.md-4 Mejores destinos
+                    p Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoria
+                .col-md-4
+                    img(src="/img/icono_precios.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.md-4 Los mejores precios
+                    p Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoria
+
