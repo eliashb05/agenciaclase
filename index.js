@@ -1,6 +1,5 @@
 //forma antigua
 //const express = require('express');
-
 //forma nueva
 import express from 'express';
 import router from './routers/index.js';

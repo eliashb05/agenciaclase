@@ -16,6 +16,11 @@ block contenido
                                     | "#{testimonio.mensaje}"
                             footer.blockquote-footer.text-right
                                 | - #{testimonio.nombre}
+                            form(action="/borrar-testimonio/" + testimonio.id method="POST")
+                                input.btn.btn-danger.btn-block(type="submit" value="Borrar Testimonio")
+
+
+
         .row
         .row
             .col-md-12

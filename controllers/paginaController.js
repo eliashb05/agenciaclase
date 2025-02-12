@@ -55,8 +55,9 @@ const paginaTestimonios = async (req, res) => {
     try {
         const testimonios = await Testimonial.findAll({
             limit: 6,
-            order: [["Id", "DESC"]],
+            order: [["id", "DESC"]],
         });
+        console.log(testimonios);
         res.render('testimonios', {
             titulo: 'Testimonios',
             testimonios: testimonios,
@@ -115,6 +116,17 @@ const guardarTestimonios = async (req, res) => {
     }
 }
 
+const borrarTestimonio = async (req, res) => {
+    try {
+        const { id } = req.params;
+        await Testimonial.destroy({ where: { id } });
+        res.redirect("/testimonios");
+    } catch (error) {
+        console.error("Error al borrar testimonio:", error);
+    }
+};
+
+
 
 
 export {
@@ -124,4 +136,5 @@ export {
     paginaTestimonios,
     paginaDetalleViajes,
     guardarTestimonios,
+    borrarTestimonio,
 }
