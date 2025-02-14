@@ -1,72 +1,40 @@
-🌍 Agencia de Viajes - Explora el Mundo con Nosotros
+🌴 Aventuras Sin Límites Travel Agency 🌍
+Transformando Sueños de Viaje en Realidades Inolvidables
+🏝️ Sobre Nosotros
+En Aventuras Sin Límites, creemos que viajar no se trata solo del destino; se trata del viaje, las experiencias y los recuerdos que creas en el camino. Con más de 20 años de experiencia en la industria del turismo, nos especializamos en crear experiencias de viaje a medida que se adaptan a tus preferencias y deseos únicos.
 
-Bienvenido al repositorio de Agencia de Viajes, una plataforma diseñada para hacer que tus aventuras sean inolvidables. Encuentra, reserva y disfruta de experiencias únicas en los destinos más increíbles del mundo. ✈️🌴
+🛫 Nuestros Servicios
+📝 Itinerarios Personalizados: Adaptados a tus intereses y presupuesto
+🌟 Escapadas de Lujo: Experimenta los mejores alojamientos y servicios
+🏔️ Tours de Aventura: Para los buscadores de emociones y exploradores
+🎭 Inmersiones Culturales: Sumérgete en las tradiciones y estilos de vida locales
+🚢 Paquetes de Cruceros: Embárcate en viajes inolvidables
+👥 Viajes en Grupo: Perfectos para familias, amigos o retiros corporativos
+🌟 ¿Por Qué Elegirnos?
+Experiencia: Nuestro equipo de expertos en viajes tiene un amplio conocimiento de destinos en todo el mundo
+Soporte 24/7: Estamos aquí para ti antes, durante y después de tu viaje
+Mejores Precios: Garantizamos precios competitivos y el mejor valor por tu dinero
+Servicio Personalizado: Cada itinerario está diseñado para satisfacer tus necesidades específicas
+Viajes Sostenibles: Estamos comprometidos con el turismo ecológico y responsable
+🗺️ Destinos Populares
+Europa	Asia	América	África	Oceanía
+🇫🇷 Francia	🇯🇵 Japón	🇵🇪 Perú	🇲🇦 Marruecos	🇦🇺 Australia
+🇮🇹 Italia	🇹🇭 Tailandia	🇲🇽 México	🇿🇦 Sudáfrica	🇳🇿 Nueva Zelanda
+🇪🇸 España	🇻🇳 Vietnam	🇨🇷 Costa Rica	🇰🇪 Kenia	🇫🇯 Fiyi
+📞 Contáctanos
+¿Listo para comenzar tu próxima aventura? ¡Ponte en contacto con nosotros!
 
-🚀 Características Principales
-
-✅ Búsqueda de Destinos: Encuentra tu destino ideal con filtros avanzados.✅ Reservas Online: Reserva vuelos, hoteles y actividades en un solo lugar.✅ Guías Personalizadas: Accede a recomendaciones y consejos de expertos.✅ Soporte 24/7: Atención al cliente disponible en cualquier momento.✅ Pagos Seguros: Transacciones protegidas con los últimos estándares de seguridad.
-
-🛠️ Tecnologías Utilizadas
-
-Frontend: React.js, Tailwind CSS
-
-Backend: Node.js, Express.js
-
-Base de Datos: MongoDB
-
-Autenticación: JWT (JSON Web Tokens)
-
-Despliegue: Vercel / AWS
-
-📂 Estructura del Proyecto
-
-📦 agencia-viajes
- ┣ 📂 frontend
- ┃ ┣ 📂 src
- ┃ ┃ ┣ 📂 components
- ┃ ┃ ┣ 📂 pages
- ┃ ┃ ┗ 📜 App.js
- ┣ 📂 backend
- ┃ ┣ 📂 routes
- ┃ ┣ 📂 controllers
- ┃ ┗ 📂 models
- ┗ 📜 README.md
-
-🚀 Instalación y Configuración
-
-Clonar el Repositorio
-
-git clone https://github.com/tu-usuario/agencia-viajes.git
-cd agencia-viajes
-
-Configurar el Backend
-
-cd backend
-npm install
-npm start
-
-Configurar el Frontend
-
-cd frontend
-npm install
-npm start
-
-📌 Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas colaborar en el proyecto, sigue estos pasos:
-
-Haz un fork del repositorio.
-
-Crea una rama con tu funcionalidad: git checkout -b nueva-funcionalidad
-
-Realiza tus cambios y haz un commit: git commit -m 'Agregada nueva funcionalidad'
-
-Haz un push a tu rama: git push origin nueva-funcionalidad
-
-Abre un Pull Request 🚀
-
-📞 Contacto
-
-📧 Email: contacto@agenciadeviajes.com🌍 Web: www.agenciadeviajes.com📱 Redes Sociales: Facebook | Instagram | Twitter
-
-🌟 ¡Viaja, explora y descubre con nosotros! 🌟
+📧 Email: info@aventurassinlimites.com
+📱 Teléfono: +34 123 456 789
+🌐 Sitio Web: www.aventurassinlimites.com
+📍 Dirección: Calle del Viajero 123, 28001 Madrid, España
+📅 Horario de Atención
+Día	Horario
+Lunes - Viernes	09:00 - 20:00
+Sábado	10:00 - 15:00
+Domingo	Cerrado
+💬 Síguenos en Redes Sociales
+Facebook: @aventurassinlimites
+Instagram: @aventurassinlimites
+Twitter: @aventurassinlim
+**Aventuras Sin Límites** - *Donde cada viaje es una historia por contar* 🌅
