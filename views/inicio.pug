@@ -74,8 +74,11 @@ block contenido
                                     | "#{testimonio.mensaje}"
                             footer.blockquote-footer.text-right
                                 | - #{testimonio.nombre}
-                            form(action="/borrar-testimonio/" + testimonio.id method="POST")
-                                input.btn.btn-danger.btn-block(type="submit" value="Borrar Testimonio")
+                            .d-flex.flex-row.justify-content-center
+                                .d-grid.gap-2.d-flex.flex-row.w-300
+                                    form(action="/borrar-testimonio/" + testimonio.id method="POST" class="mx-2 w-50")
+                                        input.btn.btn-danger.w-100.h-100(type="submit" value="Borrar Testimonio")
+                                    a.btn.btn-warning.btn-block.mx-2.w-50.h-100(href="/editarTestimonio/" + testimonio.id) Editar Testimonio
         .row
         .row
             .col-md-12

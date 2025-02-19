@@ -1,5 +1,5 @@
 import express from 'express';
-import {paginaInicio, paginaNosotros, paginaTestimonios, paginaViajes, paginaDetalleViajes, guardarTestimonios,borrarTestimonio} from "../controllers/paginaController.js";
+import {paginaInicio, paginaNosotros, paginaTestimonios, paginaViajes, paginaDetalleViajes, guardarTestimonios,borrarTestimonio, editarTestimonio,testimonioNuevo} from "../controllers/paginaController.js";
 
 const router = express.Router();
 
@@ -14,8 +14,13 @@ router.get('/viajes',paginaViajes);
 
 router.get('/testimonios', paginaTestimonios);
 
+router.get('/editarTestimonio/:id', editarTestimonio);
+
 router.post("/testimonios", guardarTestimonios);
 
 router.post('/borrar-testimonio/:id', borrarTestimonio);
+
+router.post('/testimonioNuevo/:id', testimonioNuevo);
+
 
 export default router;

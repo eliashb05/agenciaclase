@@ -4,7 +4,6 @@ import moment from 'moment';
 import {Model as Testimonio} from "sequelize";
 
 
-
 const paginaInicio = async (req, res) => {
 
     const promiseDB = [];
@@ -126,6 +125,51 @@ const borrarTestimonio = async (req, res) => {
     }
 };
 
+const editarTestimonio = async (req, res) => {
+    const { id } = req.params;
+    try {
+        const testimonio = await Testimonial.findByPk(id);
+        if (!testimonio) {
+            res.redirect("/testimonios");
+        }
+
+        res.render("editarTestimonio", {
+            titulo: "Editar Testimonio",
+            testimonio,
+        });
+    } catch (error) {
+        console.error("Error al editar testimonio:", error);
+        res.redirect("/testimonios");
+    }
+};
+
+const testimonioNuevo = async (req, res) => {
+    const { id } = req.params; // Obtener ID del testimonio
+    const { nombre, correoelectronico, mensaje } = req.body;
+
+    try {
+        // Buscar el testimonio existente
+        const testimonio = await Testimonial.findByPk(id);
+        if (!testimonio) {
+            return res.status(404).send('Testimonio no encontrado');
+        }
+
+        // Actualizar testimonio existente
+        await Testimonial.update(
+            { nombre, correoelectronico, mensaje },
+            { where: { id } }
+        );
+
+        res.redirect('/testimonios'); // Redirigir a la lista de testimonios después de actualizar
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error al actualizar testimonio');
+    }
+}
+
+
+
+
 
 
 
@@ -137,4 +181,6 @@ export {
     paginaDetalleViajes,
     guardarTestimonios,
     borrarTestimonio,
+    editarTestimonio,
+    testimonioNuevo
 }

@@ -1,0 +1,31 @@
+extends layout/index
+
+block contenido
+    main.container.mt-5
+        h1.text-center-mt-5.text-center #{titulo}
+        blockquote.text-center.mb-5
+            p
+                | Edita tu testimonio
+
+        .row.justify-content-center
+            .col-md-8
+                if errores
+                    each error in errores
+                        .alert.alert-danger.text-center= error
+
+                form(action="/testimonioNuevo/" + testimonio.id method="POST")
+                    .form-group
+                        label(for="nombre") Nombre
+                        input#nombre(type="text", placeholder="Tu Nombre", name="nombre", class="form-control", value=testimonio.nombre)
+
+                    .form-group
+                        label(for="correoelectronico") Correo Electrónico
+                        input#correoelectronico(type="email", placeholder="Correo Electrónico", name="correoelectronico", class="form-control", value=testimonio.correoelectronico)
+
+                    .form-group
+                        label(for="mensaje") Mensaje
+                        textarea#mensaje(placeholder="Mensaje", name="mensaje", class="form-control", rows="5")= testimonio.mensaje
+
+                    .d-flex.justify-content-between
+                        input.btn.btn-warning(type="submit", value="Actualizar Testimonio")
+                        a.btn.btn-secondary(href="/testimonios") Cancelar
