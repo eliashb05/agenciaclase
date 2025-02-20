@@ -1,62 +1,38 @@
 
 # 🌴 Agencia de Viajes 🌍
 
-## Transformando Sueños de Viaje en Realidades Inolvidables
+Bienvenido a **Agencia de Viajes**, un proyecto desarrollado en la asignatura de **Desarrollo de Aplicaciones Web**. Esta aplicación ha sido construida utilizando **Node.js, Express, Sequelize y MySQL** con el objetivo de ofrecer una plataforma eficiente para la gestión de viajes y clientes. Además, incorpora mejoras propias y utiliza **file.io** para el almacenamiento y gestión de archivos.
 
----
+## Enlace de la Aplicación
 
-## 🏝️ Sobre Nosotros
+[Agencia de Viajes](https://agenciaclase-flit.onrender.com)
 
-En **Agencia de Viajes**, creemos que viajar no se trata solo del destino; se trata del viaje, las experiencias y los recuerdos que creas en el camino. Con más de 20 años de experiencia en la industria del turismo, nos especializamos en crear experiencias de viaje a medida que se adaptan a tus preferencias y deseos únicos.
+## Descripción
 
-## 🛫 Nuestros Servicios
+Este proyecto es una **agencia de viajes en línea** que permite a los usuarios explorar, reservar y gestionar viajes. El sistema sigue el patrón **Modelo-Vista-Controlador (MVC)** para una mejor organización y mantenimiento del código:
 
-- 📝 **Itinerarios Personalizados**: Adaptados a tus intereses y presupuesto
-- 🌟 **Escapadas de Lujo**: Experimenta los mejores alojamientos y servicios
-- 🏔️ **Tours de Aventura**: Para los buscadores de emociones y exploradores
-- 🎭 **Inmersiones Culturales**: Sumérgete en las tradiciones y estilos de vida locales
-- 🚢 **Paquetes de Cruceros**: Embárcate en viajes inolvidables
-- 👥 **Viajes en Grupo**: Perfectos para familias, amigos o retiros corporativos
+- **Modelo:** Maneja la interacción con la base de datos mediante Sequelize.
+- **Vista:** Renderiza las páginas web utilizando EJS.
+- **Controlador:** Contiene la lógica de negocio y conecta el modelo con la vista.
 
-## 🌟 ¿Por Qué Elegirnos?
+## Características
 
-1. **Experiencia**: Nuestro equipo de expertos en viajes tiene un amplio conocimiento de destinos en todo el mundo
-2. **Soporte 24/7**: Estamos aquí para ti antes, durante y después de tu viaje
-3. **Mejores Precios**: Garantizamos precios competitivos y el mejor valor por tu dinero
-4. **Servicio Personalizado**: Cada itinerario está diseñado para satisfacer tus necesidades específicas
-5. **Viajes Sostenibles**: Estamos comprometidos con el turismo ecológico y responsable
+- Registro y autenticación de usuarios.
+- Gestión de viajes (creación, edición y eliminación).
+- Almacenamiento y gestión de archivos con **file.io**.
+- Interfaz de usuario responsiva y amigable.
+- Publicación, visualización, editación y eliminación de testimonios.
 
-## 🗺️ Destinos Populares
+## Tecnologías Utilizadas
 
-| Europa | Asia | América | África | Oceanía |
-|--------|------|---------|--------|---------|
-| cn Canada | gr Grecia | in Inglaterra | rj Rio de Janeiro | fr Francia |
-| it Italia | th Tailandia | mx México | sf Sudáfrica | nz Nueva Zelanda |
-| 🇪🇸 España | 🇻🇳 Vietnam | 🇨🇷 Costa Rica | 🇰🇪 Kenia | 🇫🇯 Fiyi |
+- **Node.js:** Entorno de ejecución para JavaScript en el servidor.
+- **Express:** Framework para el desarrollo de aplicaciones web en Node.js.
+- **Sequelize:** ORM para la interacción con la base de datos MySQL.
+- **MySQL:** Base de datos relacional utilizada para almacenar la información de la agencia y los usuarios.
+- **file.io:** Servicio para el manejo de archivos en la web.
+- **EJS:** Motor de plantillas para renderizar vistas en HTML.
 
-## 📞 Contáctanos
+## Contribución
 
-¿Listo para comenzar tu próxima aventura? ¡Ponte en contacto con nosotros!
+Si deseas contribuir a este proyecto, por favor realiza un **fork** del repositorio, crea una nueva rama y envía un **pull request** con tus mejoras.
 
-- 📧 **Email**: info@agenciadeviajes.com
-- 📱 **Teléfono**: +34 123 456 789
-- 🌐 **Sitio Web**: https://agenciaclase-flit.onrender.com
-- 📍 **Dirección**: Calle del Viajero 123, 28001 Madrid, España
-
-## 📅 Horario de Atención
-
-| Día | Horario |
-|-----|---------|
-| Lunes - Viernes | 09:00 - 20:00 |
-| Sábado | 10:00 - 15:00 |
-| Domingo | Cerrado |
-
-## 💬 Síguenos en Redes Sociales
-
-- Facebook: @agenciadeviajes
-- Instagram: @aventurassinlimites
-- Twitter: @aventurassinlim
-
----
-
-\*\*Aventuras Sin Límites\*\* - \*Donde cada viaje es una historia por contar\* 🌅
