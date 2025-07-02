@@ -3,10 +3,6 @@
 
 Bienvenido a **Agencia de Viajes**, un proyecto desarrollado en la asignatura de **Desarrollo de Aplicaciones Web**. Esta aplicación ha sido construida utilizando **Node.js, Express, Sequelize y MySQL** con el objetivo de ofrecer una plataforma eficiente para la gestión de viajes y clientes. Además, incorpora mejoras propias y utiliza **file.io** para el almacenamiento y gestión de archivos.
 
-## Enlace de la Aplicación
-
-[Agencia de Viajes](https://agenciaclase-flit.onrender.com)
-
 ## Descripción
 
 Este proyecto es una **agencia de viajes en línea** que permite a los usuarios explorar, reservar y gestionar viajes. El sistema sigue el patrón **Modelo-Vista-Controlador (MVC)** para una mejor organización y mantenimiento del código:
